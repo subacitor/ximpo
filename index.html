@@ -18,6 +18,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 	<!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css">
     <title>XIMPO - TRANG CHỦ</title>
 </head>
@@ -30,8 +35,8 @@
 
         </div>
         <span id="toggle-bar">|||</span>
-        <div class="logo">
-            <img onclick="onclick="location.href='#'" src="https://yt3.ggpht.com/5E85Zf8Dds2BpCz1rW5R02HQ9RMVNfn2tyo0DtaHepuV_tITBisBzAJp2g1rBgfCMIx1vBS62w=s176-c-k-c0x00ffffff-no-rj-mo"
+        <div class="logo" onclick="location.href='https://ximpo.tk'">
+            <img src="https://yt3.ggpht.com/5E85Zf8Dds2BpCz1rW5R02HQ9RMVNfn2tyo0DtaHepuV_tITBisBzAJp2g1rBgfCMIx1vBS62w=s176-c-k-c0x00ffffff-no-rj-mo"
                 alt="" width="110vh" style="border-radius: 50%;">
         </div>
         <div class="nav-bar">
@@ -122,7 +127,7 @@
                 <div class="part-2 collapse-s">
                     <span class="news-text">NEWS</span>
                     <div class="box-asdas">
-                        <div class="box-facebook box_social">
+                        <div class="box-facebook box_social" onclick="location.href='https://www.facebook.com/ximpo1701'">
                             <i class="fa-brands fa-facebook-f fa-2x" style="color: rgb(98, 98, 252);"></i>
                             <div class="textKD"
                                 style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
@@ -140,7 +145,7 @@
                                 style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
                                 Thành viên</div>
                         </div>
-                        <div class="box-youtube box_social">
+                        <div class="box-youtube box_social" onclick="location.href='https://www.youtube.com/channel/UCBPYOpcDDDWaxjivpCjpBFA'">
                             <i class="fa-brands fa-youtube fa-2x" style="color: rgb(228, 74, 74);"></i>
                             <div class="textKD"
                                 style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
@@ -153,6 +158,18 @@
                 </div>
             </div>
         </section>
+	<div>
+		<div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://wallpaperaccess.com/full/3187850.jpg"></div>
+        <div class="swiper-slide"><img src="https://images2.alphacoders.com/118/1182002.jpg"></div>
+        <div class="swiper-slide"><img src="https://dmarket.com/blog/best-csgo-wallpapers/csgo_wallpaper9_hucf238a070721569506f10822dfb4a508_7807434_1920x1080_resize_q75_lanczos.jpg"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+	</div>
 
     </div>
     <button type="button" class="scroll-to-top btn-position btnstyle"><i class="fa-solid fa-angle-up"></i></button>
@@ -220,7 +237,25 @@
             $("#toggle-bar").css("opacity", "1");
         }) 
     </script>
-
+	
+	<script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
    
 
 
