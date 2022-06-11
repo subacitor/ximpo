@@ -208,7 +208,7 @@ body {
 }
 
 .live-stream-text {
-    font-family: font-family: 'Anton', sans-serif;;
+    font-family: font-family: 'Anton', sans-serif !important; 
     font-size: 2em;
     color: white;
 }
@@ -216,7 +216,7 @@ body {
 .news-text {
     text-align: center;
     padding: 0px 34%;
-    font-family: ghostclanexpandital;
+    font-family: 'Anton', sans-serif !important; 
     font-size: 2em;
     color: white;
 }
